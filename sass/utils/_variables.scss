@@ -1,0 +1,55 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primery-white-color: #fff;
+    --primary-bg-color: #f5f4fa;
+    --primery-footer-contact: rgba(255, 255, 255, 0.6);
+    --footer-background-color: #2f303a;
+}
+
+/*defold seting*/
+
+body {
+    font-family: Roboto, sans-serif;
+
+    color: var(--primary-text-color);
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    display: block;
+}
