@@ -37,12 +37,12 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     cursor: pointer;
-}
 
-.button-backdrop-exite:hover {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-    transition-duration: 250ms;
+    &:hover {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+        transition-duration: 250ms;
+        }
 }
 
 .modal-title {
@@ -97,49 +97,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover~.form-icon-position,
-.form-input:focus~.form-icon-position {
-    fill: var(--accent-color);
-
-}
-
-.form-input:hover,
-.form-input:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-    outline: var(--accent-color);
-}
-
-.form-buttom {
-    width: 200px;
-    height: 50px;
-
-    cursor: pointer;
-
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--primery-white-color);
-    border: none;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-buttom:focus,
-.form-buttom:hover {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--primery-white-color);
-}
-
-.form-label {
-    margin-bottom: 4px;
-}
-
 .form-input {
     padding-left: 42px;
     padding-top: 12px;
@@ -160,8 +117,50 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover~.form-icon-position,
+    &:focus~.form-icon-position {
+        fill: var(--accent-color);
+
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+        outline: var(--accent-color);
+    }
 }
 
+.form-buttom {
+    width: 200px;
+    height: 50px;
+
+    cursor: pointer;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--primery-white-color);
+    border: none;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:focus,
+    &:hover {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: var(--primery-white-color);
+    }
+}
+
+.form-label {
+    margin-bottom: 4px;
+}
 
 .form-textarea {
     position: relative;
@@ -189,27 +188,25 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
     resize: none;
+    
+    &::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+    
+        color: rgba(117, 117, 117, 0.5);
+    }
 
-}
-
-.form-textarea::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.form-textarea:hover,
-.form-textarea:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-    outline: var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+        outline: var(--accent-color);
+    }
 }
 
 .form-policy {
@@ -262,13 +259,14 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    &:checked+.form-icon-span {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        background-image: url(../images/ok2.0.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
 }
 
-.form-chekbox:checked+.form-icon-span {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    background-image: url(../images/ok2.0.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-}

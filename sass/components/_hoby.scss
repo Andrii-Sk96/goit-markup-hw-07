@@ -26,10 +26,12 @@
 .hoby__block {
     display: flex;
 }
-
-.list .hoby__element+.hoby__element {
-    margin-left: 30px;
+.list{
+    & .hoby__element+.hoby__element {
+        margin-left: 30px;
+        }
 }
+
 
 .hoby__title {
     margin-bottom: 50px;

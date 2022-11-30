@@ -4,10 +4,6 @@
     background-color: var(--primary-bg-color);
 }
 
-.team__list .team__card+.team__card {
-    margin-left: 30px;
-}
-
 .team__block {
     display: flex;
 }
@@ -29,6 +25,10 @@
     line-height: 1.18;
 
     color: var(--primary-text-color);
+
+    & .team__card+.team__card {
+        margin-left: 30px;
+    }
 }
 
 .card__list {
@@ -74,25 +74,25 @@
 
     color: #afb1b8;
 
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    }
+
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card__container .card__element+.card__element {
-    margin-left: 10px;
-}
-
-.card__link:hover,
-.card__link:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
+.card__container {
+    
+& .card__element+.card__element {
+        margin-left: 10px;
+    }
 }
 
 .card__img {
     fill: currentColor;
 }
 
-.card__container .social+.social {
-    margin-left: 10px;
-}
