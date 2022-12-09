@@ -1,3 +1,11 @@
+.hoby {
+    
+
+    @media screen and (max-width: $desktop) {
+        display: none;
+    }
+}
+
 .hoby__position {
     padding-bottom: 94px;
 }

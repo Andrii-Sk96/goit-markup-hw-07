@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/main.min.css"/>
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
@@ -25,10 +25,14 @@
           </a>
           <ul class="list nav__focus">
             <li class="item nav__elements">
-              <a href="./index.html" class="header__link nav__current">Студія</a>
+              <a href="./index.html" class="header__link nav__current"
+                >Студія</a
+              >
             </li>
             <li class="item nav__elements">
-              <a href="./portfolio.html" class="header__link nav__link">Портфоліо </a>
+              <a href="./portfolio.html" class="header__link nav__link"
+                >Портфоліо
+              </a>
             </li>
             <li class="item nav__elements">
               <a href="#" class="header__link nav__link">Контакти </a>
@@ -37,7 +41,7 @@
         </nav>
 
         <ul class="list contact__list">
-          <li class="item contact__item">
+          <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="mail" width="16" height="12">
                 <use href="./images/symbol-defs-good.svg#icon-envelope"></use>
@@ -45,7 +49,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="contact__item">
             <a href="tel:+380961111111" class="contact__link"
               ><svg class="telephone" width="10" height="16">
                 <use href="./images/symbol-defs-good.svg#icon-smartphone"></use>
@@ -54,12 +58,22 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="vector-position" width="24" height="16">
+            <use href="./images/icon-40px.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <section class="hero hero-phone">
-        <div class="container ">
+        <div class="container hero-title-position ">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-primary" data-modal-open>
             Замовити послугу
@@ -173,58 +187,58 @@
         </div>
       </section>
 
-      <section class="features">
-        <div class="container">
+      <section class="features container">
+        <div class="">
           <ul class="list features__list">
             <li class="features__element">
-              <div class="feature__icon">
-                <svg class="" width="70px" height="70px">
+              <div class="features__icon">
+                <svg class="" width="70" height="70">
                   <use
                     href="./images/symbol-defs-good.svg#icon-antenna-1"
                   ></use>
                 </svg>
               </div>
               <h3 class="features__title">увага до деталей</h3>
-              <p>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li class="features__element">
-              <div class="feature__icon">
-                <svg class="" width="70px" height="70px">
+              <div class="features__icon">
+                <svg class="" width="70" height="70">
                   <use href="./images/symbol-defs-good.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h3 class="features__title">пунктуальність</h3>
-              <p>
+              <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li class="features__element icon-diagram">
-              <div class="feature__icon">
-                <svg class="" width="70px" height="70px">
+              <div class="features__icon">
+                <svg class="" width="70" height="70">
                   <use
                     href="./images/symbol-defs-good.svg#icon-diagram-1"
                   ></use>
                 </svg>
               </div>
               <h3 class="features__title">планування</h3>
-              <p>
+              <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="features__element">
-              <div class="feature__icon">
-                <svg class="" width="70px" height="70px">
+              <div class="features__icon">
+                <svg class="" width="70" height="70">
                   <use
                     href="./images/symbol-defs-good.svg#icon-astronaut-1"
                   ></use>
                 </svg>
               </div>
               <h3 class="features__title">сучасні технології</h3>
-              <p>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -269,7 +283,7 @@
       </section>
 
       <section class="team team__section">
-        <h2 class="title">На ша команда</h2>
+        <h2 class="title">Наша команда</h2>
         <div class="container team__block">
           <ul class="team__list">
             <li class="team__card">
@@ -629,7 +643,51 @@
         </div>
       </div>
     </footer>
-    
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-button-exite js-close-menu">
+        <svg class="vector-position" width="19" height="19">
+          <use href="./images/symbol-defs (1).svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-contakt list">
+        <li class="link">
+          <a href="" class="contakt-link-mobile">+38 096 111 11 11</a>
+        </li>
+        <li class="link">
+          <a href="" class="contakt-link-mail">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
